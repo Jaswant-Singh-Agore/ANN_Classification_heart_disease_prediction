@@ -2,6 +2,7 @@
 __pycache__/
 *.py[codz]
 *$py.class
+*.pyc
 
 # C extensions
 *.so
@@ -35,6 +36,10 @@ MANIFEST
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+
+# Logs
+logs/
+*.log
 
 # Unit test / coverage reports
 htmlcov/
@@ -77,6 +82,16 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+
+# Ignore DLLs
+*.dll
+
+# Ignore timezone data
+heart/share/zoneinfo/
+
+# Ignore build artifacts
+*.exe
+*.pdb
 
 # IPython
 profile_default/
@@ -143,6 +158,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+./heart
+./heart/
 
 # Spyder project settings
 .spyderproject
@@ -205,3 +222,31 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Ignore compiled binaries / DLLs
+*.dll
+*.exe
+*.pdb
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+heart/
+
+# DLLs and binaries
+*.dll
+*.exe
+
+# Timezone and system files
+heart/share/
+
+# IDE configs
+.vscode/
+.idea/
+heart.yml
